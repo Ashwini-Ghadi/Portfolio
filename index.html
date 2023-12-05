@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashu Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ---------------------home----------------- -->
+   <div id="header">      
+        <div class="container">
+            <nav>
+                <h1><span>P</span>ortfolio</h1>
+                <ul class="sidemenu" id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#sk">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark cross" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars bar" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text" id="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span style="color: #ff004f;" class="header-name" id="header-name">Ashwini Ghadi</span> <br>From Pune</h1>
+                <a href="/components/Resume/Ashwini Ghadi_ Resume.pdf"  download class="btn btndownload"> Download CV</a>
+
+            </div>
+        </div>
+        <div class="bgimg" id="reponsive-bg">
+            <img src="/components/img/main-bg-img.png" alt="">
+        </div>
+    </div>
+
+    <!----------------about---------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="components/img/BIT-IMG.JPG">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> "My name is Ashwini Ghadi and I am a Web Developer. I am an accomplished coder and programmer, and I enjoy using my skills to contribute to the exciting technological advances that happen every day. I graduated from Dr. Babasaheb Ambedkar Technological University in 2023 with a bachelor's degree in Computer Science and Engineering." </p>
+
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick=   "opentab('skills')">Skills</p>
+
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>                            
+                            <li><span>Frontend Developer</span><br>Frontend Developer</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>BTech from PVPIT from Budhgaon</li>
+                            <li><span>2020</span><br>Diploma from PVPIT from Budhgaon</li>
+                            <li><span>2017</span><br>SSC from Sangli Shikshan Sanstha</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ------------Skills------------ -->
+    <div>
+        <div class="container" id="sk">
+            <div class="sub-title">Skills</div>
+            <div class="skills-list">
+                <div>
+                    <img src="/components/img/c.png">
+                    <h2>C Language</h2>
+                </div>
+                <div>
+                    <img src="/components/img/c++.png">
+                    <h2>OOPS</h2>
+                </div>
+                <div>
+                   <img src="/components/img/sql.png">
+                    <h2>SQL</h2>
+                </div>
+                <div>
+                   <img src="/components/img/rwd.webp">
+                    <h2>Responsive Web Designing</h2>
+                </div>
+                <div>
+                   <img src="/components/img/java.png">
+                    <h2>Java</h2>
+                </div>
+                <div>
+                    <img src="/components/img/advancedjava.png">
+                    <h2>Advance Java</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ <!----------------Project---------------->
+ <div id="project">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="/components/img/pets.jpg">
+                <div class="layer">
+                    <h3>Animals Point</h3>
+                    <p>customer can purchase animals like dog, cat ,goat, etc. & register their business on our
+                        website. As well as sell their animal related product on our website.</p>
+                        <i class="fa-solid fa-link"><a href="#"></i></a>
+                        <div class="hide">View More</div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="/components/img/animal.jpg">
+                <div class="layer">
+                    <h3>Antient Snap</h3>
+                        <p>Antient snap is a new idea of implementation an informative website which
+                            provides the information about the antient things.</p>
+                            <i class="fa-solid fa-link"></i>
+                            <div class="hide">View More</div>
+                </div>
+            </div>
+            <div class="project">
+                <img src="/components/img/expense.jpg">
+                <div class="layer">
+                    <h3>Track-o-Expense</h3>
+                        <p>The website will then track the expenses and generate reports that show users how
+                            much money they are spending on different categories, such as food, transportation,
+                            and entertainment.</p>
+                            <i class="fa-solid fa-link"></i>
+                            <div class="hide">View More</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- -------------contact---------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="contact-content">
+                    <p > <i class="fa-regular fa-envelope"></i> gashwini0709@gmail.com</p>
+                    <p> <i class="fa-solid fa-square-phone"></i> 9665605390</p>
+                    
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/ashwini-g-930589243"><i class="fa-brands fa-linkedin"></i> </a>
+                        <a href="https://www.gashwini0709@gmail.com"><i class="fa-regular fa-envelope"></i> </a>
+                        <a href="https://instagram.com/ashu_g_07"><i class="fa-brands fa-instagram"></i> </a>
+                    </div>
+                </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- ------------------go to top -------------------- -->
+
+    <div class="gototop"><a href="#top"><i class="fa-solid fa-arrow-up"></i></a></div>
+
+
+<!-- -----------------------------script------------------------------ -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemeu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right="0";
+        }
+        function closemenu(){
+            sidemeu.style.right="-200px";
+        }
+
+    </script>
+</body>
+</html>
